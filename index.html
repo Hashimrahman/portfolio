@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hashim</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    
+    <script src="index.js"></script>
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init({
+            publicKey: "PMVLB8r7_b1A7cwtr",
+          });
+       })();
+    </script>
 </head>
-<body>
+<body >
     <div class="container">
         <div class="navbar-outer">
             <div class="navbar">
@@ -35,14 +48,21 @@
 <!-- ======================================================================================================================== -->
 
         <div class="home" id="home">
-            <div class="home-text">
-                <h3>Hi, I'm Hashim</h3>
-                <h1>I'm A <br><span class="stack">Fullstack</span><br>Python Developer</h1>
-                <p>Wanna build your Dream website? <button><a href="#contact">Just Click</a></button></p>
+            <div class="home-inner">
+                <div class="home-text">
+                    <h3>Hi, I'm Hashim</h3>
+                    <h1>I'm A <br><span class="stack">Fullstack</span><br>Python Developer</h1>
+                    <p>Wanna build your Dream website? <button><a href="#contact">Just Click</a></button></p>
+                </div>
+                <div class="home-image">
+                    <img id ="image-1" src="./images/home-image.png" alt="">
+                    <img id="image-2" src="./images/home-pic.png" alt="">
+                </div>
             </div>
-            <div class="home-image">
-                <img id ="image-1" src="./images/home-image.png" alt="">
-                <img id="image-2" src="./images/home-pic.png" alt="">
+            <div class="home-icons" id="home-icon">
+                <a href="https://github.com/Hashimrahman" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/__hashim_.rhmn._/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/hashim-rahman-870b24211/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
             </div>
         </div>
 
@@ -57,23 +77,14 @@
                 <div class="line"></div>
                 <p>Highly motivated BTech graduate with a strong passion for web development. I leverage <span class="about-span1">React.js</span> and <span class="about-span2">Tailwind CSS</span> to craft user-centric and visually appealing web experiences. Currently expanding my skillset by exploring the world of backend development with a keen interest in Python's <span class="about-span1">Django</span> framework. Eager to contribute to innovative projects and collaborate with talented developers.</p>
             </div>
+            
         </div>
-
 
 <!-- ======================================================================================================================== -->
 
         <div class="projects" id="projects">
             <h2>My Undertakings</h2>
             <div class="line3"></div>
-
-            <!-- <div class="project-grid">
-                <img src="./images/karma24.png" alt="">
-                <img src="./images/laetus.png" alt="">
-            </div>
-            <div class="project-grid">
-                <img src="./images/bridgeon.png" alt="">
-                <img src="./images/karma23.png" alt="">
-            </div> -->
             <div class="project-card">
                 <div class="project-card-row1">
                     <div class="card">
@@ -103,8 +114,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-card-row2">
                     <div class="card">
                         <div class="card-info">
                             <div class="card-info-inner"><img src="./images/bridgeon.png" alt=""></div>
@@ -124,6 +133,26 @@
                         </div>
                     </div>
                 </div>
+                <!-- <div class="project-card-row2">
+                    <div class="card">
+                        <div class="card-info">
+                            <div class="card-info-inner"><img src="./images/bridgeon.png" alt=""></div>
+                            <div class="card-info-inner">
+                                <h2>BRIDGEON <span class="project-span1">(Clone)</span></h2>
+                                <p>UI Clone of Official website of <span class="project-span2">Bridgeon Solutions</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-info">
+                            <div class="card-info-inner"><img src="./images/stylit.png" alt=""></div>
+                            <div class="card-info-inner">
+                                <h2>STYLIT <span class="project-span1">(Ongoing)</span></h2>
+                                <p>Complte E-Commerce website for the clothing brand <span class="project-span2">Stylit</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </div> 
 
@@ -142,14 +171,6 @@
             </div>
           </div> -->
 
-          
-          
-
-        
-
-  
-
-
 <!-- ======================================================================================================================== -->
 
         <div class="skills" id="skills">
@@ -163,7 +184,7 @@
                         <i class='bx bxl-html5' ></i>
                     </div>
                     <div class="skill-decr">
-                        <p>HTML, the foundation of websites, structures content like text, images, and videos. Building blocks are wrapped in tags, instructing browsers on how to display the information. </p>
+                        <p>HTML, the foundation of websites, structures content like text, images, and videos. </p>
                     </div>
                 </div>
                 <div class="skill-grid-inner">
@@ -189,12 +210,11 @@
                         <i class='bx bxl-python' ></i>
                     </div>
                     <div class="skill-decr">
-                        <p>Python is a versatile, beginner-friendly programming language known for its clear syntax. It's popular for web development (like <span class="django">Django!</span>), data science, and automation thanks to its extensive libraries. </p>
+                        <p>It's popular for web development (like <span class="django">Django!</span>), data science, and automation thanks to its extensive libraries. </p>
                     </div>
                 </div>
             </div>
         </div>
-
 
 <!-- ======================================================================================================================== -->
 
@@ -217,16 +237,15 @@
                 <!-- <div class="line3"></div> -->
                 <div class="form">
                     <form action="">
-                        <input class="form-1" type="text" placeholder="Name">
-                        <input class="form-1" type="email" placeholder="Email">
-                        <input class="form-message" type="text" placeholder="Message">
+                        <input class="form-1" type="text" placeholder="Name" id="name1">
+                        <input class="form-1" type="email" placeholder="Email" id="email">
+                        <input class="form-message" type="text" placeholder="Message" id="message">
                         
                     </form>
-                    <button><a href="mailto:hashimrhmnp@gmail.com">Send email</a></button>
+                    <button onclick="sendMail()">Send email</button>
                 </div>
             </div>
         </div>
-
 
 <!-- ======================================================================================================================== -->
 
@@ -237,6 +256,13 @@
 
 <!-- ======================================================================================================================== -->
 
+<button onclick="window.location='#home'" class="scroll-up-button"><i class='bx bx-chevron-up-circle' ></i></button>
+        
     </div>
+   
+
+    
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 </body>
 </html>
