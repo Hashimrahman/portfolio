@@ -468,28 +468,7 @@ body{
     transform: scale(1.2);
     cursor: pointer;
    }
-   
 
-
-
-
-/* .project-grid{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.project-grid img{
-    width: 40%;
-    border: 2px solid rgb(72, 255, 0);
-    margin-bottom: 2rem;
-    transition: all 3s;
-}
-
-.project-grid img:hover{
-    transform: scale(1.1);
-    opacity: 0.6;
-    border: 2px solid aqua;
-} */
 @keyframes Line1{
     0%{
         width: 10rem;
@@ -515,11 +494,23 @@ body{
     }
     .card-info{
         width: 100%;
+        color: #6d00fc;
     }
+
+    .project-span2{
+        color: #00FF87;
+        /* transition: color 1s; */
+       }
     .card-info img{
         width: 99%;
         border-radius: 0.3rem;
        }
+    .card-info-inner h2{
+        text-align: center;
+    }
+    .card-info-inner p{
+        padding-bottom: 1rem;
+    }
   }
 
   @media screen and (max-width: 810px) {
