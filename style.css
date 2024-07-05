@@ -227,6 +227,7 @@ body{
         display: flex;
         justify-content: space-evenly;
         margin-bottom: 2rem;
+        font-size: 1.5rem;
 
     }
 }
@@ -492,6 +493,10 @@ body{
       width: 35%; /* Account for margins */
       height: 100%;
     }
+    
+  }
+
+  @media screen and (max-width:870px) {
     .card-info{
         width: 100%;
         color: #6d00fc;
