@@ -269,6 +269,11 @@ body{
     line-height: 2;
 }
 
+.about-text h2{
+    font-size: xx-large;
+    line-height: 1.2 !important;
+}
+
 .about-image{
     width: 40%;
     display: flex;
@@ -287,6 +292,7 @@ body{
     background-color: aqua;
     animation: Line ease 3s;
     animation-iteration-count: infinite;
+    margin-bottom: 1rem;
 }
 
 .about-span1{
@@ -301,7 +307,7 @@ body{
 
 @keyframes Line{
     0%{
-        width: 3rem;
+        width: 6rem;
     }
     100%{
         width: 0rem;
@@ -692,9 +698,14 @@ body{
     align-items: center;
 }
 
-.form input{
+.form input,textarea{
     width: 100%;
 }
+
+/* .form textarea{
+    align-items: center;
+} */
+
 
 .form-1{
     height: 3.5rem;
@@ -713,7 +724,14 @@ body{
     text-align: start;
     border: 0;
     padding-left: 1rem;
+    resize: vertical;
+    font-family: 'Poppins'; 
+    resize: none; 
 }
+.form-message::placeholder{
+    line-height: 9rem;
+}
+
 
 .contact-form button{
     width: 70%;
@@ -838,6 +856,8 @@ body{
     }
   }
 
+
+
   @media screen and (max-width:1000px){
     .contact-motion{
         display: none;
@@ -851,6 +871,11 @@ body{
 
     @media screen and (max-width:650px) {
         .form input{
+            width: 90%;
+            margin: 1;
+        }
+
+        .form textarea{
             width: 90%;
             margin: 1;
         }
@@ -914,6 +939,28 @@ body{
         color: #17FBA2;
         border: 0;
         cursor: pointer;
+        z-index: 2;
+      }
+
+      .whatsApp-button{
+        position: fixed;
+        right: 1rem;
+        bottom: 4rem;
+        /* width: 1rem;
+        height: 1rem; */
+        font-size: 3rem;
+        background: none;
+        color: #17FBA2;
+        border: 0;
+        cursor: pointer;
+        z-index: 2;
+      }
+
+      @media screen and (max-width:640px) {
+        .back{
+            background-color: #181818;
+            border-radius: 50%;
+        }
       }
 
     /* ========================================================================= */
