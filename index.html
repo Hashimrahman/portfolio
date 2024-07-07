@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +27,7 @@
     <div class="container">
         <!-- ============================================================= NAVBAR =========================================================== -->
 
-        <div class="navbar-outer">
+        <!-- <div class="navbar-outer">
             <div class="navbar">
                 <div class="nav-logo">
                     <a href="#home"><img src="./images/logo.png" alt=""></a>
@@ -45,7 +46,40 @@
                             class='bx bxl-linkedin'></i></a>
                 </div>
             </div>
+        </div> -->
+
+
+        <div class="navbar-outer">
+            <div class="navbar">
+                <div class="nav-logo">
+                    <a href="#home"><img src="./images/logo.png" alt=""></a>
+                    <span class="hamburger" onclick="toggleMenu()">☰</span>
+                </div>
+                <div class="nav-items" id="navItems">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact Me</a>
+                </div>
+                <div class="nav-icons">
+                    <a href="https://github.com/Hashimrahman" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.instagram.com/__hashim_.rhmn._/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/hashim-rahman-870b24211/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
         </div>
+        
+        <script>
+        function toggleMenu() {
+            var x = document.getElementById("navItems");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+        </script>
+        
         <!-- ============================================================= HOME SECTION =========================================================== -->
 
         <div class="home" id="home">
@@ -62,10 +96,11 @@
             </div>
             <div class="home-icons" id="home-icon">
                 <a href="https://github.com/Hashimrahman" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.instagram.com/__hashim_.rhmn._/" target="_blank"><i
-                        class='bx bxl-instagram'></i></a>
+                <a href="https://www.instagram.com/__hashim_.rhmn._/" target="_blank"><i class='bx bxl-instagram'></i>
+                </a>
                 <a href="https://www.linkedin.com/in/hashim-rahman-870b24211/" target="_blank"><i
-                        class='bx bxl-linkedin'></i></a>
+                        class='bx bxl-linkedin'></i>
+                </a>
             </div>
         </div>
 
@@ -89,6 +124,8 @@
         </div>
 
         <!-- =============================================================== PROJECT SECTION ========================================================= -->
+
+        
 
         <div class="projects" id="projects">
             <h2>Deployment Zone</h2>
@@ -148,7 +185,7 @@
             </div>
         </div>
 
-        <!-- =================================================================== SKILLS SECTION ===================================================== -->
+<!-- =================================================================== SKILLS SECTION ===================================================== -->
 
         <div class="skills" id="skills">
             <div class="skill-heading">
@@ -237,13 +274,14 @@
 
         <!-- ================================================================= BACK TO TOP ======================================================= -->
 
-        <button onclick="window.open('https://wa.me/11234567890?text=Hello%2C%20I%20am%20interested%20in%20your%20services.', '_blank')" class="whatsApp-button">
+        <button
+            onclick="window.open('https://wa.me/11234567890?text=Hello%2C%20I%20am%20interested%20in%20your%20services.', '_blank')"
+            class="whatsApp-button">
             <i class='bx bxl-whatsapp back'></i>
         </button>
-        <button onclick="window.location='#home'" class="scroll-up-button"><i
-                class='bx bx-chevron-up-circle back'></i>
+        <button onclick="window.location='#home'" class="scroll-up-button"><i class='bx bx-chevron-up-circle back'></i>
         </button>
-        
+
 
     </div>
 
