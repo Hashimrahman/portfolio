@@ -111,6 +111,7 @@ body{
     width: 90%;
     height: 60px;
     backdrop-filter: blur(8px) ;
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .nav-logo {
@@ -453,11 +454,52 @@ body{
 .about-span1{
     color: #60EFFF;
     font-weight: bolder;
+    animation: glow1 ease 5s infinite;
 }
 
 .about-span2{
-    color: burlywood;
+    color: #deb887;
     font-weight: bolder;
+    animation: glow2 ease 5s infinite;
+
+}
+
+@keyframes glow1{
+    0%
+    {
+        color: #60EFFF;
+        text-shadow: none;
+    }
+    50%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4;
+    }
+    100%{
+        color: #60EFFF;
+        text-shadow: none  
+    }
+}
+
+@keyframes glow2{
+    0%
+    {
+        color: #deb887;
+        text-shadow: none;
+    }
+    50%
+    {
+        color: #fff;
+        text-shadow: 0 0 10px #ff9100,
+        0 0 20px #ff9100,
+        0 0 40px #ff9100;
+    }
+    100%{
+        color: #deb887;
+        text-shadow: none  
+    }
 }
 
 @keyframes Line{
@@ -627,6 +669,15 @@ body{
     transform: scale(1.2);
     cursor: pointer;
    }
+
+   .card:hover h2{
+    color: #fff;
+    text-shadow: 0 0 10px #00FF87,
+    0 0 20px #00FF87,
+    0 0 40px #00FF87;
+   }
+
+
 
 @keyframes Line1{
     0%{
@@ -1068,6 +1119,13 @@ body{
         border: 0;
         cursor: pointer;
         z-index: 2;
+      }
+
+      .whatsApp-button:hover, .scroll-up-button:hover{
+        color: #fff;
+        text-shadow: 0 0 10px #17FBA2,
+        0 0 20px #17FBA2,
+        0 0 40px #17FBA2;
       }
 
       @media screen and (max-width:640px) {
